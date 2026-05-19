@@ -1,2 +1,0 @@
-Target dependency graph (1 target)
-Target 'swift_macro_demo' in project 'swift_macro_demo' (no dependencies)
