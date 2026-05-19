@@ -1,5 +1,8 @@
 // swift-macro-demo.swift
 
+import Dispatch
+import Observation
+
 // ============ @Observable (Swift 5.9+) ============
 @Observable
 class User {
@@ -23,7 +26,7 @@ class UIManager {
 // 在主线程执行
 Task { @MainActor in
     let manager = UIManager()
-    await manager.updateUI()
+    manager.updateUI()
 }
 
 // ============ @resultBuilder ============
